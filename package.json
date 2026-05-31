@@ -1,0 +1,31 @@
+{
+  "name": "smart-nursery",
+  "version": "1.0.0",
+  "description": "Smart Nursery Management System — Application web de gestion de pépinière",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch --watch-path=./routes --watch-path=./views --watch-path=./public/css --watch-path=./app.js app.js",
+    "format": "prettier --write . && js-beautify --replace \"views/**/*.html\" --indent-size 2 --wrap-line-length 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.6.2",
+    "better-sqlite3-session-store": "^0.1.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "method-override": "^3.0.0",
+    "multer": "^2.1.1",
+    "pdfkit": "^0.17.2"
+  },
+  "devDependencies": {
+    "js-beautify": "^1.15.4",
+    "prettier": "^3.8.3"
+  }
+}
